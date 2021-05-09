@@ -28,7 +28,9 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '<?php echo $_COOKIE["pixel"];?>');
+var par = new URLSearchParams(window.location.search);
+var fbp = par.get('fbpixel');
+fbq('init', fbp);
 fbq('track', 'Lead');
 </script>
 <!-- End Facebook Pixel Code -->

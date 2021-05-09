@@ -1,0 +1,1 @@
+var link = "https://btcs-era.online/ynf9TH/";
